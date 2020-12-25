@@ -1,14 +1,9 @@
 import * as z0 from './z0/z0.js';
 import { TextureManager } from './z0/graphics/texturemanager.js';
 import { Scene } from './z0/tree/scene.js';
-import { SpriteSheet } from './z0/graphics/spritesheet.js'; 
 import * as Key from './z0/input/key.js';
-import * as Mouse from './z0/input/mouse.js';
 import { Sprite2D } from './z0/graphics/sprite2d.js';
-import { distanceSquared } from './z0/math/math2d.js';
 import { ShaderSprite2D } from './z0/graphics/shadersprite2d.js';
-import { CircleCollider } from './z0/physics/primitives/circlecollider.js';
-import { AudioManager } from './z0/audio/audiomanager.js';
 import { Fractal, Julia, Mandelbrot } from './fractal/shader.js';
 
 let canvas = document.querySelector('canvas');
