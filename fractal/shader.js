@@ -3,7 +3,7 @@ import { getGL, getCanvas } from '../z0/var.js';
 
 const mandelbrot = `
 
-    #define interations 400.
+    #define iterations 400.
 
     precision highp float;
 
@@ -53,7 +53,7 @@ const mandelbrot = `
         
         float iters;
         
-        for(float iter = 0.; iter < interations; iter++) {
+        for(float iter = 0.; iter < iterations; iter++) {
             z = vec2(z.x*z.x-z.y*z.y, z.x * z.y+z.y*z.x) + uv;
             if(length(z) > 2.) {
                 iters = iter;
@@ -62,7 +62,7 @@ const mandelbrot = `
         }
         
         vec3 col;
-        col.x = pow(iters / interations, .9);
+        col.x = pow(iters / iterations, .9);
 
         gl_FragColor = vec4(col, 1.0);
     }
@@ -70,7 +70,7 @@ const mandelbrot = `
 
 const julia = `
 
-    #define interations 400.
+    #define iterations 400.
 
     precision highp float;
 
@@ -125,7 +125,7 @@ const julia = `
         float iters;
         vec3 col = vec3(0,0,0);
 
-        for(float iter = 0.; iter < interations; iter++) {
+        for(float iter = 0.; iter < iterations; iter++) {
             z = vec2(z.x*z.x-z.y*z.y,z.x*z.y+z.y*z.x) + vec2(0.285, 0.01);
             float m = dot(z, z);
 
@@ -136,7 +136,7 @@ const julia = `
         }
         
         //vec3 col;
-        col += pow(iters / interations, .9);
+        col += pow(iters / iterations, .9);
 
         
         gl_FragColor = vec4(col, 1.0);
