@@ -1,6 +1,6 @@
 ## Description
 
-A Mandelbrot and Julia set fractal explorer implented using WebGL for optimal performance.
+A Mandelbrot and Julia set fractal explorer implented using WebGL.
 
 ![Screenshot of fractal explorer](https://github.com/hpnrep6/MandelbrotFractalExplorer/blob/master/screenshot.png)
 
