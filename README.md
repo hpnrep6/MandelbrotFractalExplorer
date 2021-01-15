@@ -2,6 +2,8 @@
 
 A Mandelbrot and Julia set fractal explorer implented using WebGL.
 
+[Live version] (https://hpnrep6.github.io/MandelbrotFractalExplorer/)
+
 ![Screenshot of fractal explorer](https://github.com/hpnrep6/MandelbrotFractalExplorer/blob/master/screenshot.png)
 
 ## Controls
