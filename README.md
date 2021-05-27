@@ -14,4 +14,4 @@ A Mandelbrot and Julia set fractal explorer implented using WebGL.
 
 ## Issues
 
-- Because this is implemented in a WebGL fragment shader, there will be floating point precision issues when the zoomed in a lot, resulting in the fractal becoming pixelated.
+- Because this is implemented in a WebGL fragment shader, there will be floating point precision issues when it is zoomed in a lot, resulting in the fractal becoming pixelated.
